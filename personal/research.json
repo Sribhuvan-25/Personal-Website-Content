@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "year": "Jan 2024 - Present",
+    "role": "Graduate Research Assistant",
+    "company": "TReNDS Center, Atlanta, GA",
+    "image": "images/TReNDS.jpeg",
+    "description": [
+      "Engineered end-to-end endoscopic image classification system using DenseNet and Grad-CAM++, achieving 90% accuracy.",
+      "Designed guided patch extraction and adaptive thresholding for precise polyp detection, enhancing model performance.",
+      "Created a meta-classifier ensemble with RandomForest, GradientBoosting, and LogisticRegression, boosting recall to 91%."
+    ],
+    "technologies": [
+      "Deep Learning",
+      "GradCAM++",
+      "Tensorflow",
+      "Pytorch",
+      "Image Processing"
+    ]
+  },
+  {
+    "id": 2,
+    "year": "Nov 2021 - May 2023",
+    "role": "Undergraduate Research Student",
+    "company": "Georgia State University, Atlanta, GA",
+    "image": "images/GSU.jpg",
+    "description": [
+      "Formulated a CNN LSTM deep learning model to generate intricate melodies, incorporating features such as pitch, duration, and offset.",
+      "Processed model on 1000+ German folk music pieces, leveraging TensorFlow and the music21 library.",
+      "Executed an optimization concept involving 'placing matrix,' resulting in an 86% reduction in training time."
+    ],
+    "technologies": [
+      "Deep Learning",
+      "Music Theory",
+      "TensorFlow",
+      "music21"
+    ]
+  }
+]

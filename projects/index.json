@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "title": "Drive-Thru Vision [Hackathon Project]",
+    "description": [
+      "Executed automated license plate recognition within drive-thru systems, enabling personalized menus for customers.",
+      "Implemented a machine learning algorithm and computer vision model using OpenCV and Tesseract OCR, achieving 80% accuracy.",
+      "Integrated this model into an existing product at NCR with a Flask backend, working with MongoDB for data management."
+    ],
+    "image": "projects/driveThru.png",
+    "technologies": [
+      "OpenCV",
+      "Tesseract OCR",
+      "Flask",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Tumor Detection",
+    "description": [
+      "Proposed and performed tumor detection using advanced image classification techniques tailored for brain MRIs.",
+      "Prepared 3 distinct CNN architectures and 2 traditional ML models, processing 500+ images across 4 different classes.",
+      "Achieved 84% accuracy, 81% precision, and reduced processing time by 20% with MobileResNet."
+    ],
+    "image": "projects/TumorDetection.png",
+    "technologies": [
+      "Deep Learning",
+      "Tensorflow",
+      "Image Classification"
+    ],
+    "github": "https://github.com/Sribhuvan-25/Tumor-Detection"
+  },
+  {
+    "id": 3,
+    "title": "CipherCloud",
+    "description": [
+      "Developed a zero-knowledge cloud storage architecture where the cloud provider has no usable knowledge of user data or keys without sacrificing speed or usability.",
+      "Implemented client-side encryption with AES-256-GCM for file sealing and RSA-OAEP for wrapping 256-bit Data-Encryption Keys, ensuring private keys never leave the user's device.",
+      "Created an append-only, SHA-256 hash-chained audit log for every operation (upload, download, key rotation), providing verifiable proof of integrity and forensic trail.",
+      "Built prototype with Streamlit frontend, FastAPI backend, and SQLite storage, featuring per-file DEKs, manual/automated key rotation, and JWT-based sessions.",
+      "Conducted comprehensive security testing covering key-substitution, replay, and log-tampering scenarios to validate enterprise-ready solution.",
+      "Demonstrated practical viability of zero-knowledge cloud storage ensuring confidentiality, integrity, and accountability without trusting the server with plaintext or keys."
+    ],
+    "image": "projects/CipherCloud.png",
+    "technologies": [
+      "AES-256-GCM",
+      "RSA-OAEP",
+      "SHA-256",
+      "Streamlit",
+      "FastAPI",
+      "SQLite",
+      "JWT"
+    ],
+    "github": "https://github.com/Sribhuvan-25/CipherCloud"
+  },
+  {
+    "id": 4,
+    "title": "FitFusion-AI",
+    "description": [
+      "Developed an AI-driven platform providing personalized health and fitness guidance through advanced Retrieval-Augmented Generation (RAG) architecture.",
+      "Integrated Pinecone's vector database and OpenAI's GPT-4 model to efficiently process user queries and deliver context-aware, real-time responses.",
+      "Achieved 87% relevance accuracy by leveraging semantic query embeddings for retrieving relevant documents based on cosine similarity.",
+      "Reduced query latency to 9 seconds by streamlining embedding generation process, document retrieval workflows, and response generation using GPT-4.",
+      "Implemented iterative conversational capabilities to maintain context between queries, enabling seamless follow-up questions and achieving 85% user satisfaction.",
+      "Designed scalable and responsive system utilizing OpenAI's embedding models and optimized pipeline for end-to-end query processing."
+    ],
+    "image": "projects/FitFusion.png",
+    "technologies": [
+      "RAG",
+      "Pinecone",
+      "OpenAI GPT-4",
+      "Python",
+      "NLP",
+      "Vector Databases"
+    ],
+    "github": "https://github.com/Sribhuvan-25/FitFusion-AI"
+  },
+  {
+    "id": 5,
+    "title": "Melody Generator",
+    "description": [
+      "Designed and implemented a CNN-LSTM deep learning model to generate intricate musical melodies using advanced AI techniques for creative applications.",
+      "Utilized three key musical features—pitch, duration, and offset—to produce high-quality compositions with sophisticated musical structure.",
+      "Processed over 1,000 German folk music pieces as input data, utilizing TensorFlow for model training and music21 library for data preprocessing and feature extraction.",
+      "Implemented novel 'placing matrix' optimization strategy, achieving 86% reduction in training time while maintaining model performance.",
+      "Demonstrated expertise in combining deep learning and domain-specific knowledge to create innovative solution for melody generation."
+    ],
+    "image": "projects/Melody.png",
+    "technologies": [
+      "CNN-LSTM",
+      "TensorFlow",
+      "music21",
+      "Deep Learning",
+      "Music Theory"
+    ],
+    "github": "https://github.com/Sribhuvan-25/Melody-Generator"
+  },
+  {
+    "id": 6,
+    "title": "sLang",
+    "description": [
+      "Developed a comprehensive lexical and syntax analyzer to process and validate source code for a simplified programming language using Python.",
+      "Implemented lexical analysis phase that scans source code to generate structured sequence of tokens, identifying keywords, identifiers, operators, and literals.",
+      "Created syntax analysis phase that validates relationships between tokens by constructing parse trees, ensuring code structure aligns with language grammar.",
+      "Designed layered approach for detecting syntactical errors and providing framework for further stages like semantic analysis or code generation.",
+      "Applied core compiler design principles including tokenization and data structures like stacks for managing operator precedence and nested constructs.",
+      "Demonstrated expertise in language parsing and application of foundational computer science principles in custom programming language design and validation."
+    ],
+    "image": "projects/sLang.png",
+    "technologies": [
+      "Python",
+      "Lexical Analysis",
+      "Syntax Analysis",
+      "Compiler Design",
+      "Parsing"
+    ],
+    "github": "https://github.com/Sribhuvan-25/Lexical_And_Syntax_Analyzer"
+  }
+]

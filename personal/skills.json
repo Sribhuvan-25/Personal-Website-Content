@@ -1,0 +1,84 @@
+[
+  {
+    "category": "Languages",
+    "items": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Java",
+      "Swift",
+      "C++",
+      "SQL"
+    ]
+  },
+  {
+    "category": "Frontend",
+    "items": [
+      "React",
+      "Angular",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap"
+    ]
+  },
+  {
+    "category": "Backend",
+    "items": [
+      "Node.js",
+      "Express",
+      "Nest.js",
+      "FastAPI",
+      "Spring Boot",
+      "Flask",
+      "GraphQL"
+    ]
+  },
+  {
+    "category": "AI/ML",
+    "items": [
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "OpenAI API",
+      "Pinecone",
+      "RAG",
+      "Computer Vision"
+    ]
+  },
+  {
+    "category": "Databases",
+    "items": [
+      "PostgreSQL",
+      "MongoDB",
+      "SQLite",
+      "Vector Databases",
+      "DiskANN"
+    ]
+  },
+  {
+    "category": "Cloud & DevOps",
+    "items": [
+      "Azure",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "TeamCity",
+      "Azure DevOps"
+    ]
+  },
+  {
+    "category": "Tools & Others",
+    "items": [
+      "Git",
+      "Postman",
+      "Jest",
+      "Jasmine",
+      "Karma",
+      "Teams Toolkit",
+      "CrewAI"
+    ]
+  }
+]

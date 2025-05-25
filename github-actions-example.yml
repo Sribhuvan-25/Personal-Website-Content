@@ -1,0 +1,71 @@
+# Example GitHub Actions workflow for AI blog pipeline
+# Place this in .github/workflows/ai-blog-pipeline.yml in your content repository
+
+name: AI Blog Pipeline
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  generate-blog-post:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout content repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        # Add your AI pipeline dependencies here
+        
+    - name: Generate blog post
+      env:
+        TOGETHER_AI_API_KEY: ${{ secrets.TOGETHER_AI_API_KEY }}
+        UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        python scripts/generate_blog_post.py
+        
+    - name: Check for changes
+      id: changes
+      run: |
+        if [[ -n $(git status --porcelain) ]]; then
+          echo "changes=true" >> $GITHUB_OUTPUT
+        else
+          echo "changes=false" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Commit and push changes
+      if: steps.changes.outputs.changes == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "AI Blog Pipeline"
+        git add .
+        git commit -m "Add new AI-generated blog post - $(date +'%Y-%m-%d')"
+        git push
+        
+    - name: Trigger website rebuild
+      if: steps.changes.outputs.changes == 'true'
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        repository: sribhuvan-yellu/Personal-Website
+        event-type: content-updated
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}' 

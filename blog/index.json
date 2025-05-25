@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "welcome-to-my-blog",
+    "title": "Welcome to My Tech Blog",
+    "excerpt": "An introduction to my journey in AI/ML and software development, and what you can expect from this blog.",
+    "date": "2024-01-15",
+    "tags": [
+      "Introduction",
+      "AI",
+      "Software Development"
+    ],
+    "hero": "blog/images/welcome-hero.jpg",
+    "author": "Sribhuvan Reddy Yellu"
+  }
+]
